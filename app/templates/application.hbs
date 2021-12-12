@@ -1,0 +1,24 @@
+<NavBar>
+</NavBar>
+<div class="container-fluid bg-secondary">
+  <div class="row">
+    <div class="col">
+      <button class="btn btn-light btn-lg btn-block">Logged
+      </button>
+    </div>
+    <div class="col">
+      <button class="btn btn-light btn-lg btn-block" {{action "logout"}}>Sign out</button>
+    </div>
+    <div class="col">
+
+      <button class="btn btn-light btn-lg btn-block" {{action "login"}}>Sign in with Google</button>
+    </div>
+{{!-- {{#if this.session.isAuthenticated}} --}}
+  {{!-- works
+  {{/if}} --}}
+  </div>
+</div>
+{{outlet}}
+
+
+<Footer/>

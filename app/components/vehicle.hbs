@@ -1,0 +1,61 @@
+<article class="car-item">
+  <div class="row">
+    <div class="col-md text-center">
+      <h3>
+      {{@vehicle.brand}} {{@vehicle.model}} for ${{@vehicle.price}}
+      </h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xl-4 col-md-6 col-sm-12 col-lg-5 text-center">
+
+      <img
+              src={{@vehicle.image}}
+              alt="An image of {{@vehicle.brand}} {{@vehicle.model}}"/>
+    </div>
+    <div class="col-md">
+      <div class="row my-1">
+        <div class="col-md-4 detail brand">
+          <span>Brand:</span> {{@vehicle.brand}}
+        </div>
+        <div class="col-md-4 detail model">
+          <span>Model:</span> {{@vehicle.model}}
+        </div>
+        <div class="col-md-4 detail year">
+          <span>Year:</span> {{@vehicle.year}}
+        </div>
+      </div>
+      <div class="row my-1">
+        <div class="col-md-4 detail mileage">
+          <span>Mileage:</span> {{@vehicle.mileage}}miles
+        </div>
+        <div class="col-md-4 detail color">
+          <span>Color:</span> {{@vehicle.color}}
+        </div>
+        <div class="col-md-4 detail price">
+          <span>Price:</span> ${{@vehicle.price}}
+        </div>
+      </div>
+      <div class="row my-1">
+        <div class="col-md detail description">
+          <span>Description:</span> {{@vehicle.description}}
+        </div>
+      </div>
+      <div class="row my-3">
+        <div class="col detail mileage">
+          <span>Contact:</span> {{@vehicle.name}}
+        </div>
+        </div>
+      <div class="row my-3">
+        <div class="col detail color">
+          <span>Phone:</span> {{@vehicle.phone}}
+        </div>
+        </div>
+      <div class="row my-3">
+        <div class="col detail price">
+          <span>Email:</span> {{@vehicle.email}}
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
